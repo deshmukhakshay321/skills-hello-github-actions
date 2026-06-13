@@ -94,7 +94,7 @@ jobs:
             step_number: 1
             passed: ${{ !contains(steps.*.outcome, 'failure') }}
             results_table:
-              - description: "Created welcome.yml file in .github/workflows directory"
+              - description: "Created welcome.yml file in .github/workflows directoryy"
                 passed: ${{ steps.check-file-exists.outcome == 'success' }}
               - description: "Added a workflow name field"
                 passed: ${{ steps.check-workflow-name.outcome == 'success' }}
